@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel = "stylesheet" href = "homepage.css">
+	<title>Home Page</title>
+</head>
+<body>
+	<div id="1" class="rectangle1">
+		<p id="2">Teacher</p>
+	</div>
+	<div id="3" class="rectangle2">
+		<p id="4">Student</p>
+	</div>
+	<img src = "bal.png" class="img1">
+	<a href="gradepage.html">
+		<div id="5" class="rectangle3"></div>
+		<div id="6" class="rectangle4"></div>
+		<img id="7" class="img2">
+	</a>
+	<a href="gradepage.html">
+		<div id="8" class="rectangle5"></div>
+		<div id="9" class="rectangle6"></div>
+		<img id="10" class="img3">
+	</a>
+	<div id="11" class="rectangle7"></div>
+	<img id="12" src="teacher.png" class="img4">
+	<div id="13" class="rectangle8"></div>
+	<img id="14" src="student.png" class="img5">
+	<div id="15" class="rectangle9">
+		<p id="16" style="text-indent:120px">Light Mode</p>
+	</div>
+	<img id="19" class="img7" onclick="dark()">
+	<script type="text/javascript">
+		function dark() {
+			document.body.classList.toggle("bd");
+			document.getElementById('1').classList.toggle("r1d");
+			document.getElementById('2').classList.toggle("d");
+			document.getElementById('3').classList.toggle("r2d");
+			document.getElementById('4').classList.toggle("d");
+			document.getElementById('16').classList.toggle("d");
+			document.getElementById('5').classList.toggle("r3d");
+			document.getElementById('6').classList.toggle("r4d");
+			document.getElementById('7').classList.toggle("i2d");
+			document.getElementById('8').classList.toggle("r5d");
+			document.getElementById('9').classList.toggle("r6d");
+			document.getElementById('10').classList.toggle("i3d");
+			document.getElementById('11').classList.toggle("r7d");
+			document.getElementById('13').classList.toggle("r8d");
+			document.getElementById('15').classList.toggle("r9d");
+			document.getElementById('19').classList.toggle("i7d");
+			var x = document.getElementById('16');
+			if (x.innerHTML === "Dark mode") {
+				x.innerHTML = "Light mode";
+			}
+			else {
+				x.innerHTML = "Dark mode";
+			}
+		}
+	</script>
+</body>
+</html>
