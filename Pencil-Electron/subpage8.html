@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="subpage8.css">
+	<title>Subject Page 8</title>
+</head>
+<body>
+	<div id="1" class="rectangle2"></div>
+	<div id="2" class="rectangle1"></div>
+	<img src="bal.png" class="img1">
+	<a href="profile.html">
+		<img id="3" class="img2">
+	</a>
+	<a href="homepage.html">
+		<img id="4" class="img3">
+	</a>
+	<a href="settings.html">
+		<img id="5" class="img4">
+	</a>
+	<a href="notes.html">
+		<img id="6" class="img5">
+	</a>
+	<div id="7" class="rectangle3">
+		<p id="8">Choose your subject</p>
+	</div>
+	<a href="gradepage.html">
+		<img id="9" class="img6">
+	</a>
+	<div id="10" class="rectangle4">
+		<a href="matpage8.html">
+			<img src="maths.png" class="img7">
+		</a>
+		<p id="11" style="position:relative;left:35px;top:65px">Mathematics</p>
+	</div>
+	<div id="12" class="rectangle5">
+		<a href="phypage8.html">
+			<img src="science.png" class="img11">
+		</a>
+		<p id="13" style="position:relative;left:70px;top:45px">Physics</p>
+	</div>
+	<div id="14" class="rectangle6">
+		<a href="sstpage8.html">
+			<img src="sst.png" class="img12">
+		</a>
+		<p id="15" style="position:relative;left:30px;top:13px">Social Science</p>
+	</div>
+	<div id="16" class="rectangle7">
+		<a href="biopage8.html">
+			<img src="bio.png" class="img13">
+		</a>
+		<p id="17" style="position:relative;left:70px;top:30px">Biology</p>
+	</div>
+	<div id="18" class="rectangle9">
+		<a href="matpage8.html" style="text-decoration:none;">
+			<p id="19" style="position:relative;left:50px;top:-13px">Mathematics</p>
+		</a>
+	</div>
+	<div id="20" class="rectangle10">
+		<a href="phypage8.html" style="text-decoration:none">
+			<p id="21" style="position:relative;left:80px;top:-13px">Physics</p>
+		</a>
+	</div>
+	<div id="22" class="rectangle11">
+		<a href="sstpage8.html" style="text-decoration:none">
+			<p id="23" style="position:relative;left:40px;top:-13px">Social Science</p>
+		</a>
+	</div>
+	<div id="24" class="rectangle12">
+		<a href="biopage8.html" style="text-decoration:none">
+			<p id="25" style="position:relative;left:80px;top:-13px">Biology</p>
+		</a>
+	</div>
+	<img id="26" class="img8" onclick="dark()">
+	<div id="27" class="rectangle8">
+		<img src="listuse.png" class="img9" onclick="mode1()">
+		<img src="griduse.png" class="img10" onclick="mode2()">
+	</div>
+	<script type="text/javascript">
+		function dark() {
+			document.body.classList.toggle("bd");
+			document.getElementById('1').classList.toggle("r2d");
+			document.getElementById('2').classList.toggle("r1d");
+			document.getElementById('3').classList.toggle("i2d");
+			document.getElementById('4').classList.toggle("i3d");
+			document.getElementById('5').classList.toggle("i4d");
+			document.getElementById('6').classList.toggle("i5d");
+			document.getElementById('7').classList.toggle("r3d");
+			document.getElementById('8').classList.toggle("d");
+			document.getElementById('9').classList.toggle("i6d");
+			document.getElementById('10').classList.toggle("r4d");
+			document.getElementById('11').classList.toggle("d");
+			document.getElementById('12').classList.toggle("r5d");
+			document.getElementById('13').classList.toggle("d");
+			document.getElementById('14').classList.toggle("r6d");
+			document.getElementById('15').classList.toggle("d");
+			document.getElementById('16').classList.toggle("r7d");
+			document.getElementById('17').classList.toggle("d");
+			document.getElementById('18').classList.toggle("r9d");
+			document.getElementById('19').classList.toggle("d");
+			document.getElementById('20').classList.toggle("r10d");
+			document.getElementById('21').classList.toggle("d");
+			document.getElementById('22').classList.toggle("r11d");
+			document.getElementById('23').classList.toggle("d");
+			document.getElementById('24').classList.toggle("r12d");
+			document.getElementById('25').classList.toggle("d");
+			document.getElementById('26').classList.toggle("i8d");
+			document.getElementById('27').classList.toggle("r8d");
+		}
+		function mode1() {
+			document.getElementById('10').style.display = 'none';
+			document.getElementById('12').style.display = 'none';
+			document.getElementById('14').style.display = 'none';
+			document.getElementById('16').style.display = 'none';
+			document.getElementById('18').style.display = 'block';
+			document.getElementById('20').style.display = 'block';
+			document.getElementById('22').style.display = 'block';
+			document.getElementById('24').style.display = 'block';
+		}
+		function mode2() {
+			document.getElementById('10').style.display = 'block';
+			document.getElementById('12').style.display = 'block';
+			document.getElementById('14').style.display = 'block';
+			document.getElementById('16').style.display = 'block';
+			document.getElementById('18').style.display = 'none';
+			document.getElementById('20').style.display = 'none';
+			document.getElementById('22').style.display = 'none';
+			document.getElementById('24').style.display = 'none';
+		}
+	</script>
+</body>
+</html>
