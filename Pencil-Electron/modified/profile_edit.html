@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="profile_edit.css">
+	<title>Profile - edit</title>
+</head>
+<body>
+	<div id="1" class="rectangle2"></div>
+	<div id="2" class="rectangle1"></div>
+	<img src="bal.png" class="img1">
+	<a href="profile.html">
+		<img id="14" class="img2">
+	</a>
+	<a href="homepage.html">
+		<img id="3" src="home.png" class="img3">
+	</a>
+	<a href="settings.html">
+		<img id="4" src="settings.png" class="img4">
+	</a>
+	<a href="notes.html">
+		<img id="5" src="notes.png" class="img5">
+	</a>
+	<div id="6" class="rectangle3">
+		<p id="7" style="text-indent:140px">Profile</p>
+	</div>
+	<img id="8" class="img8" onclick="dark()">
+	<form method="POST">
+		<p id="9" style="font-size:25px;position:absolute;left:250px;top:230px">Name : </p>
+		<input id="14" type="text" name="name" style="position:absolute;left:350px;top:255px;width:500px;height:30px">
+		<p id="10" style="font-size:25px;position:absolute;left:250px;top:300px">DOB : </p>
+		<input id="15" type="date" name="dob" style="position:absolute;left:350px;top:325px;width:500px;height:30px">
+		<p id="11" style="font-size:25px;position:absolute;left:250px;top:370px">School : </p>
+		<input id="16" type="text" name="school" style="position:absolute;left:350px;top:395px;width:500px;height:30px">
+		<p id="12" style="font-size:25px;position:absolute;left:250px;top:440px">Grade : </p>
+		<input id="17" type="text" name="grade" style="position:absolute;left:350px;top:465px;width:500px;height:30px">
+		<p id="13" style="font-size:25px;position:absolute;left:250px;top:510px">Roll no. : </p>
+		<input id="18" type="text" name="rollno" style="position:absolute;left:350px;top:535px;width:500px;height:30px">
+		<button type="submit" id="submit" style="position:absolute;left:350px;top:605px;" onclick="store()">Submit</button>
+	</form>
+	<script type="text/javascript">
+		function dark() {
+			document.body.classList.toggle("bd");
+			document.getElementById('1').classList.toggle("r2d");
+			document.getElementById('2').classList.toggle("r1d");
+			document.getElementById('3').classList.toggle("i3d");
+			document.getElementById('4').classList.toggle("i4d");
+			document.getElementById('5').classList.toggle("i5d");
+			document.getElementById('6').classList.toggle("r3d");
+			document.getElementById('7').classList.toggle("d");
+			document.getElementById('8').classList.toggle("i8d");
+			document.getElementById('9').classList.toggle("d");
+			document.getElementById('10').classList.toggle("d");
+			document.getElementById('11').classList.toggle("d");
+			document.getElementById('12').classList.toggle("d");
+			document.getElementById('13').classList.toggle("d");
+			document.getElementById('14').classList.toggle("i2d")
+		}
+	</script>
+	<script type="text/javascript">
+		function store() {
+			var a = document.getElementById('14').value;
+			var b = document.getElementById('15').value;
+			var c = document.getElementById('16').value;
+			var d = document.getElementById('17').value;
+			var e = document.getElementById('18').value;
+			window.localStorage.setItem('name',a);
+			window.localStorage.setItem('dob',b);
+			window.localStorage.setItem('school',c);
+			window.localStorage.setItem('grade',d);
+			window.localStorage.setItem('rollno',e);
+		}
+	</script>
+</body>
+</html>

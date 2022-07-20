@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="profile.css">
+	<title>Profile</title>
+</head>
+<body>
+	<div id="1" class="rectangle2"></div>
+	<div id="2" class="rectangle1"></div>
+	<img src="bal.png" class="img1">
+	<img id="14" class="img2">
+	<a href="homepage.html">
+		<img id="3" src="home.png" class="img3">
+	</a>
+	<a href="settings.html">
+		<img id="4" src="settings.png" class="img4">
+	</a>
+	<a href="notes.html">
+		<img id="5" src="notes.png" class="img5">
+	</a>
+	<div id="6" class="rectangle3">
+		<p id="7" style="text-indent:140px">Profile</p>
+	</div>
+	<img id="8" class="img8" onclick="dark()">
+	<p id="9" style="font-size:25px;position:absolute;left:250px;top:230px">Name : </p>
+	<p id="10" style="font-size:25px;position:absolute;left:250px;top:300px">DOB : </p>
+	<p id="11" style="font-size:25px;position:absolute;left:250px;top:370px">School : </p>
+	<p id="12" style="font-size:25px;position:absolute;left:250px;top:440px">Grade : </p>
+	<p id="13" style="font-size:25px;position:absolute;left:250px;top:510px">Roll no. : </p>
+	<script type="text/javascript">
+		function dark() {
+			document.body.classList.toggle("bd");
+			document.getElementById('1').classList.toggle("r2d");
+			document.getElementById('2').classList.toggle("r1d");
+			document.getElementById('3').classList.toggle("i3d");
+			document.getElementById('4').classList.toggle("i4d");
+			document.getElementById('5').classList.toggle("i5d");
+			document.getElementById('6').classList.toggle("r3d");
+			document.getElementById('7').classList.toggle("d");
+			document.getElementById('8').classList.toggle("i8d");
+			document.getElementById('9').classList.toggle("d");
+			document.getElementById('10').classList.toggle("d");
+			document.getElementById('11').classList.toggle("d");
+			document.getElementById('12').classList.toggle("d");
+			document.getElementById('13').classList.toggle("d");
+			document.getElementById('14').classList.toggle("i2d")
+		}
+	</script>
+	<script type="text/javascript">
+		var a = window.localStorage.getItem('name');
+		var b = window.localStorage.getItem('dob');
+		var c = window.localStorage.getItem('school');
+		var d = window.localStorage.getItem('grade');
+		var e = window.localStorage.getItem('rollno');
+		document.getElementById('9').innerHTML = "Name : " + a;
+		document.getElementById('10').innerHTML = "DOB : " + b;
+		document.getElementById('11').innerHTML = "School : " + c;
+		document.getElementById('12').innerHTML = "Grade : " + d;
+		document.getElementById('13').innerHTML = "Roll No. : " + e;
+	</script>
+</body>
+</html>
