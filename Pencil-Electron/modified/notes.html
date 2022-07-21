@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="notes.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<title>Notes</title>
+</head>
+<body>
+	<div id="1" class="rectangle2"></div>
+	<div id="2" class="rectangle1"></div>
+	<img src="bal.png" class="img1">
+	<a href="profile.html">
+		<img id="3" class="img2">
+	</a>
+	<a href="homepage.html">
+		<img id="4" class="img3">
+	</a>
+	<a href="settings.html">
+		<img id="5" class="img4">
+	</a>
+	<img id="6" class="img5">
+	<div id="7" class="rectangle3">
+		<p id="8" style="text-indent:140px">Notes</p>
+	</div>
+	<img id="9" class="img6" onclick="dark()">
+	<div class="popup-box">
+      <div class="popup">
+        <div class="content">
+          <header>
+            <p></p>
+            <i class="uil uil-times"></i>
+          </header>
+          <form action="#">
+            <div class="row title">
+              <label>Title</label>
+              <input type="text" spellcheck="false">
+            </div>
+            <div class="row description">
+              <label>Description</label>
+              <textarea spellcheck="false"></textarea>
+            </div>
+            <button></button>
+          </form>
+        </div>
+      </div>
+    </div>
+	<div class="wrapper">
+      <li class="add-box">
+        <div class="icon"><i class="uil uil-plus"></i></div>
+        <p>Add new note</p>
+      </li>
+    </div>
+	<script type="text/javascript">
+		function dark() {
+			document.body.classList.toggle("bd");
+			document.getElementById('1').classList.toggle("r2d");
+			document.getElementById('2').classList.toggle("r1d");
+			document.getElementById('3').classList.toggle("i2d");
+			document.getElementById('4').classList.toggle("i3d");
+			document.getElementById('5').classList.toggle("i4d");
+			document.getElementById('6').classList.toggle("i5d");
+			document.getElementById('7').classList.toggle("r3d");
+			document.getElementById('8').classList.toggle("d");
+			document.getElementById('9').classList.toggle("i6d");
+			document.getElementById('10').classList.toggle("d");
+		}
+	</script>
+	<script src="script.js"></script>
+</body>
+</html>
